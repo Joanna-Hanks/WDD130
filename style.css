@@ -138,7 +138,6 @@ footer::before {
     max-width: 920px;
     max-height: 200px;
 }
-
 .project_image {
     display: grid;
     grid-column: 1;
