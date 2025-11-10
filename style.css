@@ -25,19 +25,35 @@ nav {
     background-color: #152B35;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 1rem 0;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-nav div {
+
+nav a {
     color: #A7D8C2;
-    margin: 0 2rem;
+    text-decoration: none;
+    margin: 0 2.5rem;
     font-size: 1.1rem;
-    transition: color 0.3s, border-bottom 0.3s;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
 }
-nav div:hover {
+
+nav a:hover {
     color: #29778D;
     border-bottom: 2px solid #29778D;
 }
+
+nav a.active {
+    color: #2B5055;
+    border-bottom: 2px solid #2B5055;
+}
+
 header {
     max-width: 1000px;
     margin: 3rem auto;
