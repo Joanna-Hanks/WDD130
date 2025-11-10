@@ -1,0 +1,67 @@
+#wrapper {
+    background-color: rgb(0, 0, 0);
+
+}
+header {
+    width: 100%;
+    max-height: 30px;
+    background-color: rgb(42, 42, 56);
+
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+main .img {
+    width: 948.8px;
+    height: 950.4px;
+    margin: 0 auto;
+    background-image: url('images/halloween.jpg');
+    background-size: cover; 
+    transition: background-image .5s ease-in-out; 
+}
+h2 {
+    color: rgb(133, 27, 133);
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+li {
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;;
+    display: grid;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+h1 {
+    color: rgb(159, 33, 159);
+    text-align: center;
+    font-size: 5em;
+    margin-top: 15px;
+}
+p {
+    color: orange;
+    text-align: center;
+    font-size: 1.25em;
+    padding-bottom: 60px;
+    margin-top: 10px;
+}
+footer {
+    color: white;
+    text-align: center;
+    font-size: .85em;
+    margin-top: 50px;
+}
+li:hover {
+    background-color: rgb(85, 0, 0);
+}
+main .img:hover {
+    background-image: url('images/Twix.jpg');
+    
+}
+section {
+    width: 950.4px;
+    margin: 0 auto;
+}

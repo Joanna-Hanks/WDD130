@@ -1,0 +1,176 @@
+/*
+#Colors:
+#0C1C26
+#A7D8C2
+#2B5055
+#411A1D
+#29778D
+#152B35
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Merriweather&family=Inter');
+
+
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Merriweather;
+    background: linear-gradient(180deg, #0C1C26 0%, #2B5055 100%);
+    color: #A7D8C2;
+    line-height: 1.7;
+    margin: 0;
+}
+nav {
+    background-color: #152B35;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+nav div {
+    color: #A7D8C2;
+    margin: 0 2rem;
+    font-size: 1.1rem;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+nav div:hover {
+    color: #29778D;
+    border-bottom: 2px solid #29778D;
+}
+header {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: rgba(21, 43, 53, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.purpose {
+    color: #A7D8C2;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+main {
+    max-height: 100%;
+    max-width: 100%;
+}
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #152B35;
+    color: #A7D8C2;
+    padding: 2.5rem 3rem;
+    border-top: 2px solid #2B5055;
+    height: 110px;
+}
+footer a {
+    color: #A7D8C2;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: #29778D;
+}
+footer p {
+    margin: 0.3rem 0;
+}
+footer .logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+}
+.footer-links a {
+    color: #A7D8C2;
+    transition: color 0.3s;
+}
+main .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+}
+main h3 {
+    color: white;
+    text-align: center;
+}
+.projects img {
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.projects img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+footer::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, transparent, #2B5055, transparent);
+}
+
+
+
+/* projects page css */
+.project_container {
+    width: 920px;
+    height: 200px;
+    max-width: 920px;
+    max-height: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.inside_container {
+    display: grid;
+    grid-template-columns: 1/2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100px;
+}
+.project_image {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/3;
+    height: 160px;
+    width: 170px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 15px;
+}
+.project_title {
+    font-family: "Open Sans";
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    text-align:center;
+    color: white;
+    font-size: 1.75em;
+}
+.project_description {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+    text-align:center;
+    display: flex;
+    flex: wrap;
+    margin-top: -20px;
+}
+.project_container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+.project_links{
+    display: inline-block;
+    color: #A7D8C2;
+    text-decoration: none;
+}

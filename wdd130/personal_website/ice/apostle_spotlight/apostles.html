@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body {
+            background-color: #E8ECED;
+            font-family: Arial, Helvetica, sans-serif;
+            font: Arial;
+        }
+        .border {
+            background-color: black;
+            border-radius: 40px;
+            height: 615px;
+            width: 814px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .background {
+            border-radius: 40px;
+            padding: 7px;
+            height: 600px;
+            width: 800px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        header .title {
+            color: rgb(255, 255, 255);
+            top: 20px;
+            left: 280px;
+            font-size: 2.25em;
+            position: absolute;
+            z-index: 3;
+
+        }
+        .elder_oaks, .elder_eyring {
+            height: 110px;
+            width: 110px;
+            border-radius: 50%;
+            padding: 30px;
+        }
+        .president_nelson {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+        }
+        .image_row {
+            display: flex;
+            justify-content: space-between;
+            top: 70px;
+            left: 190px;
+            position: absolute;
+            z-index: 3;
+        }
+        header .border_one, header .border_three {
+            background-color: rgb(255, 255, 255) ;
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            margin: 25px;
+
+        }
+        header .border_two {
+            background-color: rgb(255, 255, 255);
+            height: 130px;
+            width: 130px;
+            border-radius: 50%;
+            margin: -5px;
+             
+        }
+        header .borders {
+            display: flex;
+            justify-content: space-between;
+            top: 70px;
+            left: 190px;
+            position: absolute;
+            z-index: 2;
+        }
+        .subtitle {
+            color: white;
+            top: 230px;
+            left: 265px;
+            font-size: 1.4em;
+            position: absolute;
+            z-index: 3;
+        }
+        .elder_holland, .elder_uchtdorf, .elder_bednar, .elder_cook, .elder_christofferson, .elder_anderson, .elder_rasband, .elder_stevenson, .elder_renlund, .elder_gong, .elder_soares, .elder_kearon {
+            border: 5px solid;
+            border-color: white;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            margin: 5px;
+            
+        } 
+        .quorum_row_one {
+            display: flex;
+            justify-content: space-between;
+            top: 270px;
+            left: 220px;
+            position: absolute;
+            z-index: 3;
+        }
+        .quorum_row_two {
+            display: flex;
+            justify-content: space-between;
+            top: 370px;
+            left: 220px;
+            position: absolute;
+            z-index: 3;
+        }
+        .quorum_row_three {
+            display: flex;
+            justify-content: space-between;
+            top: 470px;
+            left: 220px;
+            position: absolute;
+            z-index: 3;
+        }
+        .elder_holland:hover, .elder_uchtdorf:hover, .elder_bednar:hover, .elder_cook:hover, .elder_christofferson:hover, .elder_anderson:hover, .elder_rasband:hover, .elder_stevenson:hover, .elder_renlund:hover, .elder_gong:hover, .elder_soares:hover, .elder_kearon:hover {
+            border-color: rgb(68, 3, 66);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="border">
+        <div><img class="background" src="images\christus.webp">
+
+        <header>
+            <div class="title">First Presidency</div>
+
+            <div class="image_row">
+                
+                <div><img class="elder_oaks" src="images\oaks.webp"></div>
+                <div><img class="president_nelson" src="images\nelson.webp"></div>
+                <div><img class="elder_eyring" src="images\eyring.webp"></div>
+            </div>
+            <div class="borders">
+                <div class="border_one"></div>
+                <div class="border_two"></div>
+                <div class="border_three"></div>
+            </div>
+        </header>
+        <main>
+            <div class="subtitle">Quorum of the Twelve Apostles</div>
+        </main>
+        <footer>
+            <div class="quorum">
+                <div class="quorum_row_one">
+                    <div><img class="elder_holland" src="images\holland.webp"></div>
+                    <div><img class="elder_uchtdorf" src="images\uchtdorf.webp"></div>
+                    <div><img class="elder_bednar" src="images\bednar.webp"></div>
+                    <div><img class="elder_cook" src="images\cook.webp"></div>
+                </div>
+                <div class="quorum_row_two">
+                    <div><img class="elder_christofferson" src="images\christofferson.webp"></div>
+                    <div><img class="elder_anderson" src="images\anderson.webp"></div>
+                    <div><img class="elder_rasband" src="images\rasband.webp"></div>
+                    <div><img class="elder_stevenson" src="images\stevenson.webp"></div>
+                </div>
+                <div class="quorum_row_three">
+                    <div><img class="elder_renlund" src="images\renlund.webp"></div>
+                    <div><img class="elder_gong" src="images\gong.webp"></div>
+                    <div><img class="elder_soares" src="images\soares.webp"></div>
+                    <div><img class="elder_kearon" src="images\kearon.webp"></div>
+                </div>
+            </div>
+        </footer>
+        </div>
+    </div>
+</body>
+</html>
