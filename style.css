@@ -10,8 +10,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Merriweather&family=Inter');
 
-
-
 body {
     height: 100%;
     width: 100%;
@@ -132,14 +130,11 @@ footer::before {
     background: linear-gradient(90deg, transparent, #2B5055, transparent);
 }
 
-
-
 /* projects page css */
 .project_container {
-    width: 920px;
-    height: 200px;
+    width: 90%;
     max-width: 920px;
-    max-height: 200px;
+    min-height: 200px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -148,11 +143,10 @@ footer::before {
 }
 .inside_container {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    height: 200px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    height: auto;
     max-width: 920px;
-    max-height: 200px;
 }
 .project_image {
     display: grid;
@@ -173,14 +167,12 @@ footer::before {
     text-align:center;
     color: white;
     font-size: 1.75em;
-
 }
 .project_description {
     grid-column: 2;
     grid-row: 2;
     text-align:center;
     display: flex;
-
 }
 .project_container:hover {
     transform: scale(1.03);
@@ -190,4 +182,65 @@ footer::before {
     display: inline-block;
     color: #A7D8C2;
     text-decoration: none;
+}
+
+/* about me page */
+.description {
+    text-align: center; 
+    max-width: 700px; 
+    margin: 0 auto
+}
+
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    header {
+        margin: 1rem;
+        padding: 1.2rem;
+    }
+
+    .project_container {
+        width: 95%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .inside_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        height: auto;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .project_image {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .project_title {
+        grid-row: 2;
+        margin-top: 0.5rem;
+    }
+
+    .project_description {
+        grid-row: 3;
+        margin: 0.5rem 1rem;
+        display: block;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        gap: 1rem;
+    }
 }
