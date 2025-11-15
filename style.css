@@ -30,7 +30,6 @@ nav {
     top: 0;
     z-index: 1000;
 }
-
 nav a {
     color: #A7D8C2;
     text-decoration: none;
@@ -41,17 +40,14 @@ nav a {
     transition: color 0.3s ease, border-bottom 0.3s ease;
     border-bottom: 2px solid transparent;
 }
-
 nav a:hover {
     color: #29778D;
     border-bottom: 2px solid #29778D;
 }
-
 nav a.active {
     color: #2B5055;
     border-bottom: 2px solid #2B5055;
 }
-
 header {
     max-width: 1000px;
     margin: 3rem auto;
@@ -190,6 +186,59 @@ footer::before {
     max-width: 700px; 
     margin: 0 auto
 }
+.about_section {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    background-color: rgba(21, 43, 53, 0.75);
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+.portrait {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 3px solid #29778D;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+}
+.about_text h2 {
+    color: #A7D8C2;
+    margin-bottom: 1rem;
+}
+.skills_section, .values_section {
+    max-width: 1100px;
+    margin: 4rem auto;
+    text-align: center;
+}
+.skills_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.skill_card {
+    background-color: rgba(12, 28, 38, 0.75);
+    padding: 1.8rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+.skill_card h3 {
+    color: #29778D;
+    margin-bottom: 0.5rem;
+}
+.values_box {
+    margin-top: 1.5rem;
+    padding: 2.5rem;
+    background: rgba(21, 43, 53, 0.6);
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+}
+
 
 /* MOBILE FIXES */
 @media (max-width: 768px) {
