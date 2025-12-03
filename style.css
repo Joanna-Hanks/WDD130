@@ -106,7 +106,6 @@ footer::before {
     background: linear-gradient(90deg, transparent, #2B5055, transparent);
 }
 
-/* PROJECTS PAGE */
 main .projects {
     display: flex;
     flex-wrap: wrap;
