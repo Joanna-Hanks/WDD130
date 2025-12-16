@@ -292,3 +292,14 @@ main h3 {
         gap: 1rem;
     }
 }
+
+/* CLIENT REPORT PAGE */
+body.client_report main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    background-color: rgba(21, 43, 53, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
